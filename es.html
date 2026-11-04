@@ -31,7 +31,7 @@
       display: flex;
       align-items: center;
       gap: 16px;
-      margin-bottom: 40px;
+      margin-bottom: 32px;
     }
 
     .logo {
@@ -66,7 +66,7 @@
       padding: 4px 10px;
       border-radius: 20px;
       border: 1px solid #2563eb40;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
       letter-spacing: 0.3px;
     }
 
@@ -161,41 +161,38 @@
       </div>
     </header>
 
-    <span class="badge">Última actualización: octubre 2026</span>
+    <span class="badge">Última actualización: noviembre 2026</span>
 
     <p>
-      DroPilot es una herramienta musical para guitarristas que funciona
-      principalmente sin conexión. Esta política explica qué información maneja la
-      app y cómo la protege.
+      DroPilot es una herramienta musical para guitarristas diseñada para operar
+      principalmente sin conexión. Esta política detalla qué información se trata,
+      con qué finalidades y cómo puedes ejercer tus derechos de privacidad.
     </p>
 
-    <h2>Datos personales</h2>
+    <h2>Datos personales y cuenta de usuario</h2>
 
     <div class="no-data">
       <span class="icon">✅</span>
       <p>
-        <strong>DroPilot no pide cuenta ni registro.</strong>
-        Las progresiones, los favoritos y los ajustes se guardan en el dispositivo
-        y no se envían a nuestros servidores. La publicidad descrita más abajo la
-        gestiona Google.
+        <strong>DroPilot no requiere registro ni cuenta de usuario.</strong>
+        No solicitamos ni almacenamos tu nombre, correo electrónico, contraseñas
+        ni lista de contactos.
       </p>
     </div>
 
     <h2>Información guardada en el dispositivo</h2>
 
     <p>
-      Toda la información que genera el usuario —progresiones de acordes
-      guardadas, carpetas, preferencias de idioma, tema visual y ajustes— se
-      almacena <strong>exclusivamente en el dispositivo</strong> mediante el
-      mecanismo estándar de almacenamiento local de Android
-      (<code>SharedPreferences</code>).
+      Toda la información que generas al utilizar la app —progresiones de acordes
+      guardadas, carpetas, preferencias de sonido, afinación, idioma y tema visual— se
+      almacena <strong>exclusivamente en tu dispositivo</strong> mediante el
+      almacenamiento local estándar (<code>SharedPreferences</code>).
     </p>
 
     <div class="highlight">
       <p>
-        Las progresiones y los ajustes no se envían a nuestros servidores y no son
-        accesibles para el desarrollador. Google trata los datos de publicidad
-        descritos más abajo.
+        Tus progresiones y configuraciones no se transmiten a servidores propios ni
+        están al alcance del desarrollador.
       </p>
     </div>
 
@@ -207,71 +204,164 @@
     </p>
 
     <ul>
-      <li>Detectar la frecuencia del sonido en tiempo real.</li>
-      <li>Mostrar en pantalla la nota musical más cercana y su desafinación.</li>
+      <li>Detectar la frecuencia acústica de las notas en tiempo real.</li>
+      <li>Mostrar en pantalla la nota musical más cercana y su afinación.</li>
     </ul>
 
     <div class="highlight">
       <p>
-        El audio captado por el micrófono <strong>no se graba, no se almacena
-        y no se transmite</strong> en ningún momento. El procesamiento ocurre
-        íntegramente en el dispositivo.
+        La señal de audio captada por el micrófono <strong>no se graba, no se almacena
+        en archivos y no se transmite</strong> bajo ninguna circunstancia. El cálculo se
+        realiza íntegramente en la memoria volátil de tu dispositivo.
       </p>
     </div>
 
-    <h2>Compras in-app</h2>
+    <h2>Sin publicidad interna</h2>
 
     <p>
-      DroPilot ofrece una compra opcional «DroPilot Pro» para desbloquear
-      funcionalidades avanzadas. Esta transacción es gestionada íntegramente por
-      <strong>Google Play Billing</strong> y está sujeta a la
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-        Política de Privacidad de Google
-      </a>.
+      La aplicación DroPilot <strong>no muestra anuncios publicitarios dentro de la
+      aplicación</strong> (banners, anuncios intersticiales ni vídeos bonificados).
+      Las versiones vigentes para Android, iOS y Windows están totalmente libres de
+      publicidad integrada.
+    </p>
+
+    <h2>Medición y optimización de campañas (Meta App Events)</h2>
+
+    <p>
+      En la versión de Android, DroPilot integra el SDK de <strong>Meta App Events</strong>
+      (Meta Platforms, Inc.) con el fin de medir la eficacia de nuestras campañas publicitarias
+      externas (anuncios en Facebook e Instagram) y optimizarlas para llegar a usuarios
+      interesados en DroPilot Pro.
+    </p>
+
+    <div class="highlight">
+      <p>
+        <strong>Consentimiento previo obligatorio:</strong> La transmisión de datos a Meta
+        está completamente desactivada por defecto y solo se activa si otorgas tu consentimiento
+        explícito a través del diálogo que se muestra en la aplicación.
+      </p>
+    </div>
+
+    <p>Si decides aceptar, se pueden compartir con Meta los siguientes datos seudónimos:</p>
+    <ul>
+      <li>
+        <strong>Identificadores del dispositivo:</strong> Identificador publicitario de Google
+        (Google Advertising ID / GAID) e identificadores técnicos generados por el SDK.
+      </li>
+      <li>
+        <strong>Eventos de uso:</strong> Apertura de la aplicación e inicio de sesión.
+      </li>
+      <li>
+        <strong>Eventos del embudo de compra Pro:</strong> Visualización de la pantalla de DroPilot Pro
+        (<code>ViewContent</code>), pulsación para iniciar el proceso de compra (<code>InitiatedCheckout</code>)
+        y confirmación de compra exitosa (<code>Purchase</code>), incluyendo divisa e importe pagado.
+      </li>
+    </ul>
+
+    <p style="margin-top: 12px;">
+      <strong>Control y revocación:</strong> Puedes rechazar la medición pulsando «No permitir»
+      en el aviso inicial o bien revocar tu consentimiento en cualquier momento desde
+      <strong>Ajustes ➔ Privacidad y medición</strong> desactivando la casilla de medición de campañas de Meta.
+      Al revocarlo, se desactiva de inmediato la recopilación del identificador de publicidad y se
+      bloquea cualquier nuevo envío de eventos a Meta, incluso tras reiniciar la aplicación.
     </p>
 
     <p style="margin-top: 12px;">
-      El desarrollador de DroPilot <strong>no tiene acceso a los datos de pago</strong>
-      del usuario. Únicamente recibe la confirmación de si la compra se ha
-      completado o no.
-    </p>
-
-    <h2>Publicidad</h2>
-
-    <p>
-      En Android e iOS, la versión gratuita muestra anuncios de Google AdMob.
-      DroPilot Pro elimina los anuncios. En Windows no se muestran anuncios.
-    </p>
-
-    <p>
-      Para servir y medir esa publicidad, Google puede tratar el identificador de
-      publicidad del dispositivo, datos técnicos como la dirección IP y datos
-      sobre los anuncios mostrados, conforme a su
-      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-        política de privacidad
+      El tratamiento de estos datos por parte de Meta se rige por la
+      <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">
+        Política de privacidad de Meta
       </a>.
     </p>
+
+    <h2>Analíticas de producto (Firebase Analytics)</h2>
+
+    <p>
+      DroPilot utiliza <strong>Google Analytics for Firebase</strong> (Google LLC) como
+      herramienta interna de análisis de producto para comprender cómo se utiliza la aplicación
+      y resolver problemas técnicos.
+    </p>
+
+    <p>
+      Firebase recopila identificadores de instalación propios de la app (app-instance ID) y
+      eventos agregados de interacción funcional (funciones utilizadas, errores en transacciones,
+      aperturas de paywall). No recopila tu identidad personal y no se comparte con redes de
+      anuncios externas para perfilado publicitario.
+    </p>
+
+    <p style="margin-top: 12px;">
+      Para más información, consulta la
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+        Política de privacidad de Google
+      </a>.
+    </p>
+
+    <h2>Compras y pagos in-app</h2>
+
+    <p>
+      DroPilot ofrece la compra opcional «DroPilot Pro» de pago único para desbloquear todas las
+      prestaciones avanzadas de por vida. La transacción económica es gestionada exclusivamente por
+      la tienda de aplicaciones de tu plataforma:
+    </p>
+
+    <ul>
+      <li><strong>Android:</strong> Google Play Billing (Google LLC).</li>
+      <li><strong>iOS / macOS:</strong> StoreKit (Apple Inc.).</li>
+      <li><strong>Windows:</strong> Microsoft Store (Microsoft Corporation).</li>
+    </ul>
+
+    <p style="margin-top: 12px;">
+      El desarrollador de DroPilot <strong>no tiene acceso ni almacena tus datos de pago</strong>,
+      números de tarjeta bancaria ni datos de facturación. Únicamente recibimos la confirmación técnica
+      de la tienda para verificar la validez de la licencia y desbloquear el acceso a DroPilot Pro.
+    </p>
+
+    <h2>Tus derechos y cómo ejercerlos</h2>
+
+    <p>
+      Conforme al RGPD europeo y a la normativa de privacidad de Reino Unido (UK GDPR / DPA 2018),
+      tienes derecho de acceso, rectificación, supresión y limitación del tratamiento de tus datos:
+    </p>
+
+    <ul>
+      <li>
+        <strong>Revocación del consentimiento de medición publicitaria:</strong> Puedes ejercerla
+        de forma directa e inmediata dentro de la app accediendo a <em>Ajustes ➔ Privacidad y medición</em>.
+      </li>
+      <li>
+        <strong>Restablecimiento o eliminación del ID de publicidad:</strong> Puedes eliminar o
+        restablecer tu identificador en cualquier momento desde los ajustes de tu teléfono
+        (en Android: <em>Ajustes ➔ Google ➔ Anuncios ➔ Eliminar ID de publicidad</em>), lo que
+        desvincula tu dispositivo de datos históricos recopilados por las plataformas publicitarias.
+      </li>
+      <li>
+        <strong>Contacto para solicitudes de privacidad:</strong> Dado que DroPilot no almacena
+        cuentas de usuario, si deseas realizar cualquier consulta respecto a datos tratados
+        puedes escribir a:
+        <br />
+        <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>
+      </li>
+    </ul>
 
     <h2>Menores de edad</h2>
 
     <p>
-      La aplicación no está dirigida específicamente a menores de 13 años.
+      DroPilot es una herramienta educativa musical y no está dirigida deliberadamente a menores de 13 años.
     </p>
 
     <h2>Cambios en esta política</h2>
 
     <p>
-      Si en el futuro se modificara alguna práctica de privacidad, esta página
-      se actualizará con la nueva fecha de revisión. Se recomienda consultarla
-      ocasionalmente.
+      Esta política de privacidad podrá actualizarse periódicamente para reflejar mejoras técnicas,
+      nuevas funciones o requerimientos regulatorios. Cualquier cambio se publicará en esta página
+      con la fecha de última actualización.
     </p>
 
     <h2>Contacto</h2>
 
     <p>
-      Para cualquier pregunta sobre esta política de privacidad puedes escribir a:
+      Desarrollador: Pablo Níveiro
       <br />
-      <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>
+      Correo de contacto: <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>
     </p>
 
     <footer>
