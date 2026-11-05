@@ -9,10 +9,8 @@
   <title>DroPilot – Privacy Policy</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: #0d1b2a;
       color: #e2e8f0;
       min-height: 100vh;
@@ -20,23 +18,20 @@
       justify-content: center;
       padding: 48px 16px 64px;
     }
-
     .card {
       background: #202b36;
       border: 1px solid #334155;
       border-radius: 16px;
-      max-width: 720px;
+      max-width: 740px;
       width: 100%;
       padding: 48px 40px;
     }
-
     header {
       display: flex;
       align-items: center;
       gap: 16px;
       margin-bottom: 32px;
     }
-
     .logo {
       width: 52px;
       height: 52px;
@@ -46,20 +41,17 @@
       object-fit: cover;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
     }
-
     header h1 {
       font-size: 26px;
       font-weight: 700;
       color: #f1f5f9;
       letter-spacing: -0.4px;
     }
-
     header p {
       font-size: 13px;
       color: #64748b;
       margin-top: 2px;
     }
-
     .badge {
       display: inline-block;
       background: #1e3a5f;
@@ -72,7 +64,6 @@
       margin-bottom: 28px;
       letter-spacing: 0.3px;
     }
-
     h2 {
       font-size: 14px;
       font-weight: 700;
@@ -82,20 +73,16 @@
       margin-top: 36px;
       margin-bottom: 12px;
     }
-
     p, li {
       font-size: 15px;
       line-height: 1.75;
       color: #94a3b8;
     }
-
     ul {
       padding-left: 20px;
       margin-top: 8px;
     }
-
     li { margin-bottom: 6px; }
-
     .highlight {
       background: #1e293b;
       border-left: 3px solid #3b82f6;
@@ -103,9 +90,7 @@
       padding: 14px 18px;
       margin: 16px 0;
     }
-
     .highlight p { color: #cbd5e1; }
-
     .no-data {
       display: flex;
       align-items: flex-start;
@@ -116,30 +101,22 @@
       padding: 16px 18px;
       margin: 16px 0;
     }
-
     .no-data .icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
-
     .no-data p { color: #86efac; font-size: 14px; }
-
     a { color: #60a5fa; text-decoration: none; }
     a:hover { text-decoration: underline; }
-
     footer {
       margin-top: 48px;
       padding-top: 24px;
       border-top: 1px solid #334155;
       text-align: center;
     }
-
     footer p { font-size: 13px; color: #475569; }
-
     .lang-switch {
       margin-top: 20px;
       font-size: 14px;
     }
-
     .lang-switch a { font-weight: 600; }
-
     @media (max-width: 560px) {
       .card { padding: 32px 20px; }
       header h1 { font-size: 22px; }
@@ -167,62 +144,89 @@
     <span class="badge">Last updated: November 2026</span>
 
     <p>
-      DroPilot is an offline-first musical tool for guitarists. This policy
-      explains what information the app handles and how it is protected.
+      DroPilot is an offline-first musical tool for guitarists. This policy explains what technical information is processed, the applicable legal bases, how the integration with Firebase and Google Ads operates, and the practical methods available to exercise your privacy rights.
     </p>
 
-    <h2>Personal data</h2>
+    <h2>1. Personal Data & User Account</h2>
 
     <div class="no-data">
       <span class="icon">✅</span>
       <p>
-        <strong>DroPilot does not collect, store, or transmit any personal data.</strong>
-        No user account, email address, or registration is required to use the application.
+        <strong>DroPilot does not require or request user registration.</strong>
+        We do not collect or store names, email addresses, phone numbers, or passwords. The application can be used without creating a user account.
       </p>
     </div>
 
-    <h2>Information stored on your device</h2>
+    <h2>2. Data Stored Locally on Your Device</h2>
 
     <p>
-      Everything you create—saved chord progressions, folders, language preferences,
-      theme, and audio settings—is stored <strong>only on your device</strong> using standard
-      local storage (<code>SharedPreferences</code>).
+      Musical data and application settings configured by the user—saved chord progressions, favorite folders, custom tunings, audio settings, language, and visual theme—are stored <strong>exclusively on your device</strong> using standard operating system local storage (<code>SharedPreferences</code>).
     </p>
 
     <div class="highlight">
       <p>
-        This information is never sent to external servers, is not shared with third
-        parties, and is not accessible to the developer.
+        These files and configurations are never uploaded to proprietary servers of the developer and reside strictly within your device's local memory.
       </p>
     </div>
 
-    <h2>Microphone permission</h2>
+    <h2>3. Microphone Permission (Tuner)</h2>
 
     <p>
-      The <strong>tuner</strong> feature may request microphone access. It is used
-      <em>solely</em> to:
+      The tuner feature requests microphone access solely to analyze acoustic audio frequencies in real time and display the detected musical pitch and tuning variance on screen.
     </p>
 
+    <div class="highlight">
+      <p>
+        Microphone audio is <strong>never recorded, never saved to persistent storage, and never transmitted across the internet</strong>. Processing takes place in real time within your device's volatile memory (RAM) while using the tuner and is immediately discarded.
+      </p>
+    </div>
+
+    <h2>4. No In-App Advertising</h2>
+
+    <p>
+      DroPilot <strong>does not display advertisements within the application</strong> (no banner ads, interstitial pop-ups, or rewarded video ads). The user experience is entirely free from embedded advertising networks.
+    </p>
+
+    <h2>5. Product Analytics (Firebase Analytics)</h2>
+
+    <p>
+      On Android and iOS versions, DroPilot integrates <strong>Google Analytics for Firebase</strong> (provided by Google LLC) to monitor functional tool usage and evaluate the conversion funnel.
+    </p>
+
+    <p>
+      Through this service, pseudonymous installation identifiers (<em>app-instance ID</em>) and specific in-app navigation events are processed:
+    </p>
     <ul>
-      <li>Detect the acoustic pitch of your instrument in real time.</li>
-      <li>Display the nearest musical note and its tuning offset on screen.</li>
+      <li>Application startup (<code>app_open</code>).</li>
+      <li>Pro paywall presentation and its trigger source (<code>pro_paywall_shown</code>).</li>
+      <li>Purchase or restore button taps (<code>pro_purchase_tap</code>, <code>pro_restore_tap</code>).</li>
+      <li>Transaction status outcomes (<code>pro_purchase_success</code> or <code>pro_purchase_fail</code>).</li>
+      <li>Technical user properties for aggregate cohort segmentation: <code>is_pro</code> and <code>access_tier</code>.</li>
     </ul>
 
-    <div class="highlight">
-      <p>
-        Audio captured by the microphone is <strong>never recorded, never stored in files,
-        and never transmitted</strong> over the network. Processing happens entirely in your
-        device's volatile memory.
-      </p>
-    </div>
-
-    <h2>In-app purchases</h2>
+    <h2>6. Advertising Identifier (AD_ID) & Google Ads Measurement</h2>
 
     <p>
-      DroPilot offers an optional “DroPilot Pro” one-time purchase to permanently unlock
-      all advanced features. Transactions are processed directly by your platform’s official store:
+      In the release build for Android, Google Play Services Measurement libraries bundle the Android Advertising Identifier permission (<code>com.google.android.gms.permission.AD_ID</code>).
     </p>
 
+    <p>
+      The Firebase project is linked with the <strong>Google Ads</strong> advertising platform. When a user purchases DroPilot Pro or completes a conversion action, conversion events and associated technical identifiers (such as the <code>AD_ID</code>, if available and enabled on the device) are communicated to Google Ads.
+    </p>
+
+    <p>
+      This communication is intended to assess the performance of user acquisition campaigns across Google's advertising network and attribute purchases to originating ads. Consequently, Google may link these app interactions with advertising profiles or user Google Accounts in accordance with the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+    </p>
+
+    <h2>7. DroPilot Pro Purchase & Billing</h2>
+
+    <p>
+      DroPilot offers an optional «DroPilot Pro» purchase as a <strong>one-time permanent payment</strong> (non-consumable product, identifier <code>pro_unlock</code>) to permanently unlock the complete voicings library and advanced tools. It is not a recurring subscription and does not generate ongoing charges.
+    </p>
+
+    <p>
+      Payment collection and transaction processing are managed exclusively by the official app store for your device:
+    </p>
     <ul>
       <li><strong>Android:</strong> Google Play Billing (Google LLC).</li>
       <li><strong>iOS / macOS:</strong> StoreKit (Apple Inc.).</li>
@@ -230,39 +234,99 @@
     </ul>
 
     <p style="margin-top: 12px;">
-      The developer of DroPilot <strong>does not have access to and does not store your payment
-      methods</strong>, card details, or billing addresses. We only receive technical confirmation
-      from the store to validate your lifetime license.
+      The developer of DroPilot <strong>does not have access to payment card numbers, bank accounts, or billing addresses</strong>. The developer only receives a technical transaction receipt token from the platform store to validate purchase authenticity and unlock Pro features.
     </p>
 
-    <h2>Third-party services & advertising</h2>
+    <h2>8. Legal Bases for Processing & Consent Status (GDPR)</h2>
 
     <p>
-      DroPilot <strong>does not display advertisements</strong> and <strong>does not integrate</strong>
-      ad networks, social trackers, or third-party marketing SDKs that collect usage data, advertising
-      identifiers, or behavioural profiles.
+      Under the General Data Protection Regulation (EU GDPR 2016/679 and UK GDPR), the data processing activities described are carried out under the following legal bases:
     </p>
 
-    <h2>Children’s privacy</h2>
+    <ul>
+      <li><strong>Performance of a contract (Art. 6(1)(b) GDPR):</strong> Applicable to providing the app's musical features and activating the DroPilot Pro license requested by the user.</li>
+      <li><strong>Legitimate interests (Art. 6(1)(f) GDPR):</strong> Applicable to basic aggregate technical measurement necessary for software maintenance.</li>
+      <li><strong>Consent & current technical status (Art. 6(1)(a) GDPR):</strong> Under European privacy regulations (ePrivacy Directive and GDPR), terminal equipment identifier access (such as the <code>AD_ID</code>) and transmission to Google Ads for ad attribution require prior, informed, and unambiguous consent.</li>
+    </ul>
+
+    <div class="highlight">
+      <p>
+        <strong>Transparency Notice on Consent:</strong> The application does not currently feature an in-app consent prompt banner nor does it transmit configuration parameters via <em>Google Consent Mode v2</em>. Operating system controls (such as deleting the AD_ID) allow users to restrict tracking, but do not on their own constitute an in-app affirmative consent collection mechanism under European regulatory standards. This technical implementation is currently undergoing legal review and future architectural adjustment.
+      </p>
+    </div>
+
+    <h2>9. Service Providers & International Data Transfers</h2>
 
     <p>
-      DroPilot is an educational music tool, is not directed specifically at children under 13,
-      and does not collect data from any user regardless of age.
+      Analytics, attribution, and payment infrastructure services are provided by <strong>Google LLC</strong> (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA).
     </p>
 
-    <h2>Changes to this policy</h2>
+    <p>
+      The operation of these services involves data processing on servers outside the European Economic Area. These international transfers are safeguarded under the <strong>EU-U.S. Data Privacy Framework (DPF)</strong>, under which Google LLC is formally certified with the U.S. Department of Commerce, as well as European Commission Standard Contractual Clauses (SCC).
+    </p>
+
+    <h2>10. Data Retention Periods</h2>
+
+    <ul>
+      <li><strong>On-Device Local Data:</strong> Retained indefinitely on the device until the user clears application storage or uninstalls the app.</li>
+      <li><strong>Individual Event Data in Firebase Analytics:</strong> User-level and event records linked to installation identifiers are retained according to the period configured in Google Analytics settings (standard of 2 months or 14 months), after which Google automatically deletes these individual records.</li>
+      <li><strong>Aggregated Statistical Reports:</strong> Consolidated aggregate metric reports generated by Google Analytics (overall session counts, total purchases, or screen views dissociated from individual identifiers) are retained for historical analysis without automatic expiration.</li>
+    </ul>
+
+    <h2>11. Information Security</h2>
 
     <p>
-      If our privacy practices change in the future, this page will be updated with a new
-      revision date. Please check back occasionally.
+      Network transmissions to Google Play and Firebase are encrypted using standard <strong>HTTPS / TLS</strong> protocols. Locally, application data is isolated within operating system sandboxed environments. The application does not integrate remote crash reporting libraries (no Crashlytics or similar third-party tools); internal diagnostic logs are saved to a strictly local file within device storage.
+    </p>
+
+    <h2>12. Data Subject Rights & Deletion Requests</h2>
+
+    <p>
+      Under the GDPR, users hold rights of access, rectification, erasure, restriction, and objection. To exercise them, distinct operational environments must be distinguished:
+    </p>
+
+    <p style="margin-top: 10px;"><strong>A. Deleting Local Device Data:</strong></p>
+    <p>
+      You can immediately erase all saved progressions and settings without developer intervention:
+    </p>
+    <ul>
+      <li>On Android: navigate to <em>Settings ➔ Apps ➔ DroPilot ➔ Storage ➔ Clear Storage / Clear Data</em> (or uninstall the app).</li>
+      <li>On iOS / macOS / Windows: uninstall the application from your device.</li>
+    </ul>
+
+    <p style="margin-top: 10px;"><strong>B. Halting Future Collection & Advertising ID (AD_ID) Reset:</strong></p>
+    <ul>
+      <li><strong>Delete Advertising ID:</strong> On Android, go to <em>Settings ➔ Google ➔ Ads ➔ Delete advertising ID</em>. This deletes the identifier from the device so future interactions cannot be linked to your prior advertising profile. However, this action does not retroactively delete historic records previously transmitted to Google.</li>
+      <li><strong>Stopping Future Telemetry:</strong> Uninstalling the application completely halts the transmission of any new events from that device to Firebase.</li>
+    </ul>
+
+    <p style="margin-top: 10px;"><strong>C. Erasure Requests for Historical Firebase Logs:</strong></p>
+    <p>
+      Previously logged records remain on Google servers until the retention window expires or a deletion request is processed:
+    </p>
+    <ul>
+      <li>You may submit an erasure request by writing to <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>.</li>
+      <li><strong>Essential Technical Limitation:</strong> Because DroPilot does not manage user accounts, emails, or personal names, records stored in Firebase are strictly <strong>pseudonymous</strong> (tied to a randomized <em>app-instance ID</em>). The developer cannot locate or delete records corresponding to an individual person unless the user provides the specific technical installation identifier of their app (<em>Firebase App Instance ID</em>).</li>
+    </ul>
+
+    <h2>13. Children’s Privacy</h2>
+
+    <p>
+      DroPilot is an educational music tool and is not knowingly directed at children under 13, nor does it knowingly collect personal data from children.
+    </p>
+
+    <h2>14. Changes to This Policy</h2>
+
+    <p>
+      This privacy policy may be updated periodically. Any revisions will be published on this page with an updated revision date.
     </p>
 
     <h2>Contact</h2>
 
     <p>
-      Questions regarding this privacy policy:
+      Responsible Developer: Pablo Níveiro
       <br />
-      <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>
+      Contact Email: <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>
     </p>
 
     <footer>

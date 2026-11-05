@@ -9,10 +9,8 @@
   <title>DroPilot – Política de Privacidad</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background: #0d1b2a;
       color: #e2e8f0;
       min-height: 100vh;
@@ -20,23 +18,20 @@
       justify-content: center;
       padding: 48px 16px 64px;
     }
-
     .card {
       background: #202b36;
       border: 1px solid #334155;
       border-radius: 16px;
-      max-width: 720px;
+      max-width: 740px;
       width: 100%;
       padding: 48px 40px;
     }
-
     header {
       display: flex;
       align-items: center;
       gap: 16px;
       margin-bottom: 32px;
     }
-
     .logo {
       width: 52px;
       height: 52px;
@@ -46,20 +41,17 @@
       object-fit: cover;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
     }
-
     header h1 {
       font-size: 26px;
       font-weight: 700;
       color: #f1f5f9;
       letter-spacing: -0.4px;
     }
-
     header p {
       font-size: 13px;
       color: #64748b;
       margin-top: 2px;
     }
-
     .badge {
       display: inline-block;
       background: #1e3a5f;
@@ -72,7 +64,6 @@
       margin-bottom: 28px;
       letter-spacing: 0.3px;
     }
-
     h2 {
       font-size: 14px;
       font-weight: 700;
@@ -82,20 +73,16 @@
       margin-top: 36px;
       margin-bottom: 12px;
     }
-
     p, li {
       font-size: 15px;
       line-height: 1.75;
       color: #94a3b8;
     }
-
     ul {
       padding-left: 20px;
       margin-top: 8px;
     }
-
     li { margin-bottom: 6px; }
-
     .highlight {
       background: #1e293b;
       border-left: 3px solid #3b82f6;
@@ -103,9 +90,7 @@
       padding: 14px 18px;
       margin: 16px 0;
     }
-
     .highlight p { color: #cbd5e1; }
-
     .no-data {
       display: flex;
       align-items: flex-start;
@@ -116,30 +101,22 @@
       padding: 16px 18px;
       margin: 16px 0;
     }
-
     .no-data .icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
-
     .no-data p { color: #86efac; font-size: 14px; }
-
     a { color: #60a5fa; text-decoration: none; }
     a:hover { text-decoration: underline; }
-
     footer {
       margin-top: 48px;
       padding-top: 24px;
       border-top: 1px solid #334155;
       text-align: center;
     }
-
     footer p { font-size: 13px; color: #475569; }
-
     .lang-switch {
       margin-top: 20px;
       font-size: 14px;
     }
-
     .lang-switch a { font-weight: 600; }
-
     @media (max-width: 560px) {
       .card { padding: 32px 20px; }
       header h1 { font-size: 22px; }
@@ -167,67 +144,89 @@
     <span class="badge">Última actualización: noviembre 2026</span>
 
     <p>
-      DroPilot es una herramienta musical para guitarristas que funciona
-      completamente sin conexión. Esta política explica qué información maneja la
-      app y cómo la protege.
+      DroPilot es una herramienta musical para guitarristas diseñada con arquitectura de procesamiento local (<em>offline-first</em>). Esta política detalla qué información técnica se trata, las bases jurídicas aplicables, cómo opera la integración con Firebase y Google Ads, y las vías reales para ejercer tus derechos de privacidad.
     </p>
 
-    <h2>Datos personales</h2>
+    <h2>1. Datos personales y cuenta de usuario</h2>
 
     <div class="no-data">
       <span class="icon">✅</span>
       <p>
-        <strong>DroPilot no recopila, almacena ni transmite ningún dato personal.</strong>
-        No se requiere cuenta de usuario, correo electrónico ni ningún tipo de
-        registro para usar la aplicación.
+        <strong>DroPilot no solicita ni requiere registro.</strong>
+        No recogemos ni almacenamos nombres, direcciones de correo electrónico, números de teléfono ni contraseñas. La aplicación se utiliza sin crear una cuenta de usuario.
       </p>
     </div>
 
-    <h2>Información guardada en el dispositivo</h2>
+    <h2>2. Datos almacenados localmente en el dispositivo</h2>
 
     <p>
-      Toda la información que genera el usuario —progresiones de acordes
-      guardadas, carpetas, preferencias de idioma, tema visual y ajustes— se
-      almacena <strong>exclusivamente en el dispositivo</strong> mediante el
-      mecanismo estándar de almacenamiento local
-      (<code>SharedPreferences</code>).
+      La información musical y de configuración creada por el usuario —progresiones de acordes, carpetas de favoritos, afinaciones personalizadas, ajustes de audio, idioma y tema visual— se almacena <strong>exclusivamente en el dispositivo</strong> mediante el almacenamiento local del sistema operativo (<code>SharedPreferences</code>).
     </p>
 
     <div class="highlight">
       <p>
-        Esta información nunca se transmite a servidores externos, no se comparte
-        con terceros y no es accesible para el desarrollador.
+        Estos archivos y configuraciones no se transmiten a servidores propios del desarrollador y residen únicamente en el almacenamiento local de tu equipo.
       </p>
     </div>
 
-    <h2>Permiso de micrófono</h2>
+    <h2>3. Permiso de micrófono (Afinador)</h2>
 
     <p>
-      La función de <strong>afinador</strong> solicita acceso al micrófono del
-      dispositivo. Este permiso se utiliza <em>únicamente</em> para:
+      La función de afinador solicita permiso de acceso al micrófono con el exclusivo propósito de analizar la frecuencia acústica en tiempo real para mostrar en pantalla la nota musical detectada y su desviación de afinación.
     </p>
 
+    <div class="highlight">
+      <p>
+        El audio del micrófono <strong>no se graba, no se almacena en archivos y no se transmite a través de internet</strong>. El procesamiento ocurre en tiempo real en la memoria volátil (RAM) de tu dispositivo durante el uso del afinador y se descarta de forma inmediata.
+      </p>
+    </div>
+
+    <h2>4. Sin publicidad en la interfaz de la aplicación</h2>
+
+    <p>
+      DroPilot <strong>no muestra anuncios dentro de la aplicación</strong> (sin banners, anuncios intersticiales ni vídeos publicitarios). La navegación y uso de la herramienta no contienen inserciones publicitarias.
+    </p>
+
+    <h2>5. Analítica de producto (Firebase Analytics)</h2>
+
+    <p>
+      En las versiones para Android e iOS, DroPilot integra <strong>Google Analytics for Firebase</strong> (suministrado por Google LLC) con la finalidad de conocer el uso funcional de la app y evaluar el embudo de conversión.
+    </p>
+
+    <p>
+      A través de este servicio se tratan identificadores pseudónimos de instalación (<em>app-instance ID</em>) y eventos específicos de navegación interna:
+    </p>
     <ul>
-      <li>Detectar la frecuencia del sonido en tiempo real.</li>
-      <li>Mostrar en pantalla la nota musical más cercana y su afinación.</li>
+      <li>Apertura de la aplicación (<code>app_open</code>).</li>
+      <li>Visualización de la pantalla de compra Pro y su pantalla de origen (<code>pro_paywall_shown</code>).</li>
+      <li>Pulsación del botón de compra o restauración (<code>pro_purchase_tap</code>, <code>pro_restore_tap</code>).</li>
+      <li>Resultado de la transacción (<code>pro_purchase_success</code> o <code>pro_purchase_fail</code>).</li>
+      <li>Propiedades técnicas de usuario para segmentación agregada: <code>is_pro</code> y <code>access_tier</code>.</li>
     </ul>
 
-    <div class="highlight">
-      <p>
-        El audio captado por el micrófono <strong>no se graba, no se almacena
-        y no se transmite</strong> en ningún momento. El procesamiento ocurre
-        íntegramente en la memoria volátil del dispositivo.
-      </p>
-    </div>
-
-    <h2>Compras in-app</h2>
+    <h2>6. Identificador publicitario (AD_ID) y medición en Google Ads</h2>
 
     <p>
-      DroPilot ofrece una compra opcional «DroPilot Pro» de pago único para desbloquear
-      funcionalidades avanzadas de por vida. Esta transacción es gestionada íntegramente por
-      la tienda de aplicaciones correspondiente:
+      En la compilación de producción para Android, las librerías nativas de Google Play Services Measurement incorporan el permiso del identificador de publicidad de Android (<code>com.google.android.gms.permission.AD_ID</code>).
     </p>
 
+    <p>
+      El proyecto de Firebase se encuentra vinculado con la plataforma publicitaria <strong>Google Ads</strong>. Cuando un usuario completa la compra de DroPilot Pro o interactúa con el embudo, los eventos de conversión y los identificadores técnicos asociados (como el <code>AD_ID</code> si está disponible y habilitado en el dispositivo) son transmitidos a Google Ads.
+    </p>
+
+    <p>
+      Esta comunicación tiene por objeto medir la eficacia de las campañas de captación de usuarios en la red publicitaria de Google y atribuir las compras a los anuncios de origen. A consecuencia de esta integración, Google puede asociar estos eventos con perfiles de publicidad o con la cuenta de Google del usuario, conforme a lo detallado en la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidad de Google</a>.
+    </p>
+
+    <h2>7. Compra de DroPilot Pro y pagos</h2>
+
+    <p>
+      DroPilot ofrece la compra «DroPilot Pro» bajo la modalidad de <strong>pago único permanente</strong> (producto no consumible, identificador <code>pro_unlock</code>) para desbloquear de por vida la biblioteca completa de voicings y herramientas avanzadas. No constituye un servicio de suscripción periódica ni genera cuotas recurrentes.
+    </p>
+
+    <p>
+      El cobro y la gestión del pago los realiza exclusivamente la tienda oficial que corresponda a tu dispositivo:
+    </p>
     <ul>
       <li><strong>Android:</strong> Google Play Billing (Google LLC).</li>
       <li><strong>iOS / macOS:</strong> StoreKit (Apple Inc.).</li>
@@ -235,40 +234,99 @@
     </ul>
 
     <p style="margin-top: 12px;">
-      El desarrollador de DroPilot <strong>no tiene acceso ni almacena los datos de pago</strong>
-      del usuario. Únicamente recibe la confirmación técnica de la tienda de si la compra se ha
-      completado con éxito para activar el acceso Pro.
+      El desarrollador de DroPilot <strong>no tiene acceso a datos de tarjetas de crédito, cuentas bancarias ni direcciones de facturación</strong>. El desarrollador recibe de la tienda únicamente un token o confirmación técnica de compra para activar la licencia en el dispositivo.
     </p>
 
-    <h2>Servicios de terceros y publicidad</h2>
+    <h2>8. Bases jurídicas del tratamiento y estado del consentimiento (RGPD)</h2>
 
     <p>
-      DroPilot <strong>no muestra publicidad</strong> y <strong>no integra</strong> servicios
-      de seguimiento publicitario, redes sociales ni ningún SDK de terceros que recopile
-      datos de uso, identificadores de publicidad o comportamiento del usuario.
+      Conforme al Reglamento General de Protección de Datos (RGPD UE 2016/679), los tratamientos de datos descritos se amparan en las siguientes bases:
     </p>
 
-    <h2>Menores de edad</h2>
+    <ul>
+      <li><strong>Ejecución del contrato (Art. 6.1.b RGPD):</strong> Aplicable a la entrega de las funciones de la aplicación y a la activación técnica de la licencia DroPilot Pro solicitada por el usuario.</li>
+      <li><strong>Interés legítimo (Art. 6.1.f RGPD):</strong> Aplicable a la medición técnica agregada básica para el mantenimiento del servicio.</li>
+      <li><strong>Consentimiento y situación técnica actual (Art. 6.1.a RGPD):</strong> El acceso a identificadores en el terminal (como el <code>AD_ID</code>) y su transmisión hacia Google Ads para atribución publicitaria requieren, con arreglo a la normativa europea de privacidad (Directiva ePrivacy y RGPD), un consentimiento previo, informado e inequívoco.</li>
+    </ul>
+
+    <div class="highlight">
+      <p>
+        <strong>Aviso de transparencia sobre el consentimiento:</strong> La aplicación no cuenta actualmente con un diálogo de consentimiento previo en pantalla ni transmite parámetros de configuración mediante <em>Google Consent Mode v2</em>. Los controles que ofrece el sistema operativo (como la eliminación del AD_ID) permiten limitar el seguimiento, pero no constituyen por sí solos un mecanismo de obtención previa de consentimiento conforme a los criterios de las autoridades de control europeas. Esta implementación se encuentra actualmente en proceso de revisión legal y adaptación técnica.
+      </p>
+    </div>
+
+    <h2>9. Proveedores y transferencias internacionales de datos</h2>
 
     <p>
-      La aplicación es una herramienta musical educativa, no está dirigida específicamente a
-      menores de 13 años y no recopila datos de ningún usuario, independientemente de su edad.
+      Los servicios de analítica, atribución y facturación son suministrados por <strong>Google LLC</strong> (1600 Amphitheatre Parkway, Mountain View, CA 94043, EE.UU.).
     </p>
 
-    <h2>Cambios en esta política</h2>
+    <p>
+      El uso de estos servicios conlleva el tratamiento de datos en servidores situados fuera del Espacio Económico Europeo. Estas transferencias internacionales se amparan en el <strong>Marco de Privacidad de Datos UE-EE.UU. (Data Privacy Framework - DPF)</strong>, en el que Google LLC figura como entidad certificada y adherida ante el Departamento de Comercio de los EE.UU., así como en la adopción de las Cláusulas Contractuales Tipo (SCC) aprobadas por la Comisión Europea.
+    </p>
+
+    <h2>10. Plazos de conservación de datos</h2>
+
+    <ul>
+      <li><strong>Datos almacenados en el dispositivo:</strong> Se conservan indefinidamente en el equipo hasta que el usuario borre los datos de la app o la desinstale.</li>
+      <li><strong>Datos individuales en Firebase Analytics:</strong> Los registros de eventos y datos vinculados a identificadores de usuario o instalación se conservan durante el plazo fijado en la configuración de la propiedad de Google Analytics (estándar de 2 meses o 14 meses), transcurrido el cual Google elimina dichos registros individuales de forma automatizada.</li>
+      <li><strong>Informes estadísticos consolidados:</strong> Los informes métricos agregados generados por Google Analytics (recuentos globales de aperturas, compras o sesiones disociadas de identificadores) se conservan con fines estadísticos e históricos sin fecha límite de borrado automático.</li>
+    </ul>
+
+    <h2>11. Seguridad de la información</h2>
 
     <p>
-      Si en el futuro se modificara alguna práctica de privacidad, esta página
-      se actualizará con la nueva fecha de revisión. Se recomienda consultarla
-      ocasionalmente.
+      Las comunicaciones de red hacia Google Play y Firebase se transmiten cifradas mediante protocolos estándar <strong>HTTPS / TLS</strong>. En el plano local, los archivos de la app se benefician del aislamiento por espacios protegidos (<em>sandbox</em>) del sistema operativo. La aplicación no integra servicios de registro remoto de fallos (sin Crashlytics ni herramientas similares); los registros de diagnóstico técnico se guardan en un archivo exclusivamente local en el almacenamiento del dispositivo.
+    </p>
+
+    <h2>12. Ejercicio de derechos y eliminación de datos</h2>
+
+    <p>
+      Conforme al RGPD, los usuarios disponen de derechos de acceso, rectificación, supresión, limitación y oposición. Para ejercerlos, debe distinguirse entre los diferentes entornos donde residen los datos:
+    </p>
+
+    <p style="margin-top: 10px;"><strong>A. Borrado de datos locales del dispositivo:</strong></p>
+    <p>
+      Puedes eliminar de forma inmediata todas tus progresiones y configuraciones sin contactar con el desarrollador:
+    </p>
+    <ul>
+      <li>En Android: dirígete a <em>Ajustes ➔ Aplicaciones ➔ DroPilot ➔ Almacenamiento ➔ Borrar almacenamiento</em> (o desinstala la aplicación).</li>
+      <li>En iOS / macOS / Windows: desinstala la aplicación del dispositivo.</li>
+    </ul>
+
+    <p style="margin-top: 10px;"><strong>B. Cese de recogida y desvinculación publicitaria (AD_ID):</strong></p>
+    <ul>
+      <li><strong>Eliminar el ID de publicidad:</strong> En Android, accediendo a <em>Ajustes ➔ Google ➔ Anuncios ➔ Eliminar ID de publicidad</em>. Esto borra el identificador del dispositivo y hace que futuras peticiones no puedan vincularse al perfil publicitario anterior. No obstante, esta acción no elimina retroactivamente los datos históricos que ya fueron comunicados a Google con anterioridad.</li>
+      <li><strong>Cese de recopilación futura:</strong> La desinstalación de la app detiene por completo el envío de cualquier nuevo evento desde ese terminal hacia Firebase.</li>
+    </ul>
+
+    <p style="margin-top: 10px;"><strong>C. Solicitud de supresión de registros históricos en Firebase:</strong></p>
+    <p>
+      Los datos registrados en el pasado continúan en los servidores de Google hasta que venza el periodo de conservación o se tramite su borrado manual:
+    </p>
+    <ul>
+      <li>Puedes remitir una solicitud de supresión escribiendo a <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>.</li>
+      <li><strong>Limitación técnica imprescindible:</strong> Como DroPilot no utiliza cuentas de usuario, correos electrónicos ni nombres, los datos en Firebase son puramente <strong>pseudónimos</strong> (asociados a un <em>app-instance ID</em> generado al azar). El desarrollador no puede localizar ni borrar los registros correspondientes a una persona física si el usuario no aporta el identificador técnico de instalación de su app (<em>Firebase App Instance ID</em>).</li>
+    </ul>
+
+    <h2>13. Privacidad de menores</h2>
+
+    <p>
+      DroPilot es una herramienta educativa musical y no está orientada de forma específica a menores de 13 años ni recopila conscientemente datos de menores.
+    </p>
+
+    <h2>14. Cambios en esta política</h2>
+
+    <p>
+      Esta política de privacidad podrá actualizarse periódicamente. Cualquier modificación se publicará en esta página indicando la fecha de última revisión.
     </p>
 
     <h2>Contacto</h2>
 
     <p>
-      Para cualquier pregunta sobre esta política de privacidad puedes escribir a:
+      Desarrollador responsable: Pablo Níveiro
       <br />
-      <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>
+      Correo de contacto: <a href="mailto:pniveiroj@gmail.com">pniveiroj@gmail.com</a>
     </p>
 
     <footer>
